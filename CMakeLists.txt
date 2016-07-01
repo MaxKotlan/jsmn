@@ -25,7 +25,7 @@ add_executable(simple_example example/simple.c ${LIBRARY_NAME})
 add_executable(jsondump example/jsondump.c ${LIBRARY_NAME})
 
 if(NOT DEFINED NO_TESTS)
-    MAKE_TEST(jsmn_test jsmn_test.c)
+    MAKE_TEST(jsmn_test test/tests.c)
     enable_testing()
 endif()
 
